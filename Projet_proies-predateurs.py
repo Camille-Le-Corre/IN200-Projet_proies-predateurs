@@ -85,7 +85,7 @@ def creationMatrice(n):
 
 
 def coordonneesCase(ligne, colonne):
-    """ Définie les coordonnées d'une case de la grille"""
+    """ Définit les coordonnées d'une case de la grille"""
 
     taille_case = LARGEUR_CANEVAS // NB_CASES
 
@@ -379,16 +379,6 @@ def apparitionPredateurs(matrice, n):
             cpt += 1
 
     return matrice
-
-
-def naissanceAleatoireProies():
-    """ Fait apparaître F_PRO proies aléatoirement (à chaque début de tour)"""
-    # on considère cette fonction inutile car la fonction apparitionProies
-    # fait déjà apparaître un certain nombre de proies aléatoirement sur la
-    # grille avant le début de la simulation. Ensuite, des nouvelles proies
-    # apparaissent seulement suite à leur reproduction, car cela se
-    # rapproche plus de la réalité
-    pass
 
 
 def identiteProies(matrice, x, y):
